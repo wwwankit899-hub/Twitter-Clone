@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-hover {
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hover::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .scrollbar-hover:hover::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-hover:hover::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+  }
+
+  .scrollbar-hover:hover {
+    scrollbar-width: thin;
+  }
+}
